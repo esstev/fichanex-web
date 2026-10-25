@@ -51,6 +51,24 @@
 .calc-float{position:absolute;z-index:3;left:-42px;bottom:17%;background:#073257ed;color:#bdf3ff;border:1px solid #3693c3;padding:12px 17px;border-radius:12px;font-weight:800;font-size:13px;box-shadow:0 10px 30px #0008}
 @media(max-width:870px){.calculator-layout{grid-template-columns:1fr;gap:35px}.calculator-device{max-width:320px}.calculator-copy h2{font-size:clamp(36px,7vw,56px)}}
 @media(max-width:500px){.calc-float{left:0}.calculator-device{width:78%}.calc-example>div{font-size:26px}}
+
+/* Sección beta aislada: la portada y el diseño existente permanecen intactos. */
+.beta-signup{background:radial-gradient(ellipse at 76% 16%,#0e4778 0%,#082441 38%,#041428 82%);position:relative;overflow:hidden}
+.beta-signup .beta-layout{display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);gap:42px;align-items:start}
+.beta-signup .beta-copy{padding-top:24px}
+.beta-signup .beta-copy h2{font-size:clamp(33px,4vw,50px)}
+.beta-signup .beta-copy h2 span{color:#43cdff}
+.beta-signup .beta-intro{font-size:17px}
+.beta-signup .beta-note{margin-top:26px;display:grid;gap:12px}
+.beta-signup .beta-note div{padding:13px 17px;border:1px solid #245d89;border-radius:13px;background:#0b2c4bb5;color:#cbe2f5;font-size:14px;line-height:1.55}
+.beta-signup .beta-note strong{color:#76e0ff}
+.beta-signup .beta-form-wrap{min-width:0}
+.beta-signup iframe{display:block;width:100%;height:820px;border:0;border-radius:22px;background:transparent}
+.beta-signup .beta-fallback{font-size:13px;color:#b3ccdf;text-align:center;margin:12px auto 0}
+.beta-signup .beta-fallback a,.beta-signup .beta-privacy a{color:#74deff;text-decoration:underline;text-underline-offset:3px}
+.beta-signup .beta-privacy{max-width:760px;margin:26px auto 0;text-align:center;font-size:12px;color:#abc2d8;line-height:1.7}
+@media(max-width:900px){.beta-signup .beta-layout{grid-template-columns:1fr;gap:20px}.beta-signup .beta-copy{padding-top:0}.beta-signup iframe{height:790px}}
+@media(max-width:500px){.beta-signup iframe{height:880px}.beta-signup .beta-note{gap:9px}}
 </style></head><body>
 <!-- En escritorio se utiliza la composición original elegida por el propietario, sin redibujarla. Los enlaces transparentes hacen funcional la navegación de la imagen. -->
 <header id="inicio"><div class="hero-reference"><img src="assets/diseno-referencia.png" alt="FichaNex: sitio industrial azul con logotipo y presentación de la aplicación en un teléfono"><a class="hotspot nav-home" href="#inicio" aria-label="Inicio"></a><a class="hotspot nav-features" href="#funciones" aria-label="Funciones"></a><a class="hotspot nav-benefits" href="#beneficios" aria-label="Beneficios"></a><a class="hotspot nav-how" href="#como-funciona" aria-label="Cómo funciona"></a><a class="hotspot nav-plans" href="#disponibilidad" aria-label="Disponibilidad"></a><a class="hotspot nav-download" href="#disponibilidad" aria-label="Descargar aplicación"></a><a class="hotspot hero-about" href="#beneficios" aria-label="Conocer FichaNex"></a><a class="hotspot hero-functions" href="#funciones" aria-label="Ver funciones"></a><a class="hotspot store-link" href="#disponibilidad" aria-label="Estado de Google Play"></a><span class="status-hint">Android: pruebas internas · Lanzamiento público en preparación</span></div>
@@ -140,6 +158,29 @@
     </div>
   </div>
 </section>
-<section class="section" id="disponibilidad"><div class="content"><span class="kicker">Disponibilidad</span><h2>FichaNex para Android.<br><span style="color:#35cbff">iPhone próximamente.</span></h2><div class="storecards"><div class="storecard"><strong>▶ Google Play</strong><p>La versión Android se encuentra en pruebas internas en Google Play. El lanzamiento público está en preparación.</p><span class="pill">Pruebas internas</span></div><div class="storecard"><strong> App Store</strong><p>Estamos preparando la llegada de FichaNex a dispositivos Apple.</p><span class="pill">Próximamente</span></div></div><p>¿Consultas sobre FichaNex? <a href="mailto:esteban.guerra.96@gmail.com" style="color:#7be4ff;text-decoration:underline">Escríbenos por correo</a>.</p><p class="legal">La disponibilidad pública en Google Play se anunciará cuando Google apruebe el lanzamiento.</p></div></section></main>
+<section class="section" id="disponibilidad"><div class="content"><span class="kicker">Disponibilidad</span><h2>FichaNex para Android.<br><span style="color:#35cbff">iPhone próximamente.</span></h2><div class="storecards"><div class="storecard"><strong>▶ Google Play</strong><p>La versión Android se encuentra en pruebas internas en Google Play. El lanzamiento público está en preparación.</p><span class="pill">Pruebas internas</span></div><div class="storecard"><strong> App Store</strong><p>Estamos preparando la llegada de FichaNex a dispositivos Apple.</p><span class="pill">Próximamente</span></div></div><p>¿Consultas sobre FichaNex? <a href="mailto:esteban.guerra.96@gmail.com" style="color:#7be4ff;text-decoration:underline">Escríbenos por correo</a>.</p><p class="legal">La disponibilidad pública en Google Play se anunciará cuando Google apruebe el lanzamiento.</p></div></section>
+<!-- Registro Beta: sección adicional, sin alterar la portada original. -->
+<section class="section beta-signup" id="beta" aria-labelledby="beta-title">
+  <div class="content">
+    <div class="beta-layout">
+      <div class="beta-copy">
+        <span class="kicker">FICHANEX · PRUEBA CERRADA PARA ANDROID</span>
+        <h2 id="beta-title">Sé de los primeros en probar <span>FichaNex.</span></h2>
+        <p class="beta-intro">¿Trabajas en instrumentación, electricidad, mantenimiento o automatización? Ayúdanos a probar FichaNex y a mejorar esta herramienta creada para el trabajo en terreno.</p>
+        <div class="beta-note">
+          <div><strong>01 · Déjanos tu correo</strong><br>Usa la cuenta de Google con la que quieres probar la aplicación.</div>
+          <div><strong>02 · Revisaremos tu solicitud</strong><br>Te agregaremos a la lista autorizada de la prueba cerrada.</div>
+          <div><strong>03 · Recibe acceso a la beta</strong><br>Te compartiremos los pasos para aceptar la invitación y descargarla en Android.</div>
+        </div>
+      </div>
+      <div class="beta-form-wrap">
+        <iframe title="Solicitar acceso a FichaNex Beta" src="https://script.google.com/macros/s/AKfycbxkTK1spFRG1VyBP8g40CLb7s0wzEcKTlIrtl-FyEBrED94QzMLqUt4BdyvN-4G8Zo/exec" loading="lazy" referrerpolicy="no-referrer" allow="clipboard-write"></iframe>
+        <p class="beta-fallback">¿No ves el formulario? <a href="https://script.google.com/macros/s/AKfycbxkTK1spFRG1VyBP8g40CLb7s0wzEcKTlIrtl-FyEBrED94QzMLqUt4BdyvN-4G8Zo/exec" target="_blank" rel="noopener noreferrer">Ábrelo directamente aquí ↗</a></p>
+      </div>
+    </div>
+    <p class="beta-privacy">Formulario de inscripción independiente de la aplicación: el nombre (opcional) y el correo se guardan en una hoja privada de Google Sheets y se utilizan para gestionar invitaciones y enviar avisos al responsable del proyecto. La inscripción no garantiza acceso inmediato. Para consultar o solicitar la eliminación de tus datos, escribe a <a href="mailto:esteban.guerra.96@gmail.com">esteban.guerra.96@gmail.com</a>.</p>
+  </div>
+</section>
+</main>
 <footer class="footer"><div class="content footer-row"><div class="footer-logo"><img src="assets/logo-fichanex.png" alt="">FichaNex · © 2026</div><div class="footer-links"><a href="https://esstev.github.io/fichanex-privacidad/" target="_blank" rel="noopener noreferrer">Política de privacidad</a><a href="mailto:esteban.guerra.96@gmail.com">Contacto</a><a href="#inicio">Volver arriba</a></div></div></footer>
 </body></html>
